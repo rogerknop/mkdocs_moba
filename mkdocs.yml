@@ -1,0 +1,18 @@
+site_name: TramRogi
+theme: 
+  name: material
+  logo: 'img/logo.png'
+  favicon: 'img/favicon.ico'
+extra_css: [custom/material/css/custom_styles.css]
+#prev_next_buttons_location: none
+#theme: windmill-dark
+#extra_css: [custom/windmill_dark/custom_styles.css]
+#theme: readthedocs
+#extra_css: [custom/readthedocs/custom_styles.css]
+nav: 
+- Home: 'index.md'
+- Architektur: 'architektur/index.md'
+- RocRail/RocNetNode/Rocview Installation: 'rocrail/index.md'
+#- Level 1:
+#    - 'Level 1 1': 'level1/level_1_1.md'
+#    - 'Level 1 2': 'level1/level_1_2.md'
