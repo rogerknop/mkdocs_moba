@@ -1,0 +1,29 @@
+{
+  "name": "moba",
+  "version": "1.0.0",
+  "description": "Modelleisenbahn Dokumentation",
+  "scripts": {
+    "serve": "mkdocs serve",
+    "build": "mkdocs build --clean",
+    "convert": "node js/convert.js",
+    "deploy": "npm run build && node js/deploy.js",
+    "convertdeploy": "npm run convert && npm run deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerknop/mkdocs_moba.git"
+  },
+  "author": "Roger Knop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogerknop/mkdocs_moba/issues"
+  },
+  "homepage": "https://github.com/rogerknop/mkdocs_moba#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "fs-extra": "^8.1.0",
+    "node-ssh": "^6.0.0",
+    "scp2": "^0.5.0",
+    "ssh2-sftp-client": "^4.2.1"
+  }
+}
