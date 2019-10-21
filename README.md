@@ -6,12 +6,21 @@ Die Dokumentation wurde mit MkDocs erstellt: https://www.mkdocs.org/
 
 Dieses Framework erstellt Internetseite auf Basis von Konfiguration und Markdown Files.
 
-Daher der Anleitung für die Installation inkl. Python folgen: https://www.mkdocs.org/#installation
+Python & pip Installieren: https://www.python.org/downloads/
+
+Prüfen, ob Phython im Path steht: python --version & pip --version
 
 ```
+pip install --upgrade pip
+pip install mkdocs
+pip install mkdocs-material
 git clone https://github.com/rogerknop/mkdocs_moba.git
 npm install
 ```
+
+# Python Probleme
+* Falls Berechtigungsfehler: pip Befehle um --user erweitern
+* Gegebenenfalls Verzeichnis site-packages in %appdata%\Python\Python37\ löschen
 
 # Verfügbare npm scripts
 
