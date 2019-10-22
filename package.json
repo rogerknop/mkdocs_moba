@@ -20,7 +20,9 @@
     "url": "https://github.com/rogerknop/mkdocs_moba/issues"
   },
   "homepage": "https://github.com/rogerknop/mkdocs_moba#readme",
-  "dependencies": {},
+  "dependencies": {
+    "config": "^3.2.3"
+  },
   "devDependencies": {
     "fs-extra": "^8.1.0",
     "node-ssh": "^6.0.0",

@@ -1,0 +1,14 @@
+// In den Konfigurations JSON sind Kommentare erlaubt!
+// In local.json können Attribute nach Bedarf überschrieben werden.
+{
+    // Konvertierung der PPTX mit Libreoffice oder Powershell/Powerpoint
+    "Convert": {
+        "useLibreOffice": true,
+        "LibreOffice": {
+            "cmdLibreOffice": "C:/Program Files/LibreOffice/program/soffice.exe"
+        },
+        "PowerPoint": {
+            "allSlides": true
+        }
+    }
+}

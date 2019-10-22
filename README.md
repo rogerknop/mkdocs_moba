@@ -1,13 +1,11 @@
-# Prerequisites 
+# Voraussetzungen 
 NodeJs und npm und Powerpoint oder Libreoffice müssen installiert sein.
 
-# MkDocs: Setup
-Die Dokumentation wurde mit MkDocs erstellt: https://www.mkdocs.org/
-
+# Setup / Installation
+Die Dokumentation wurde mit MkDocs erstellt: https://www.mkdocs.org/  
 Dieses Framework erstellt Internetseite auf Basis von Konfiguration und Markdown Files.
 
-Python & pip Installieren: https://www.python.org/downloads/
-
+Python & pip Installieren: https://www.python.org/downloads/  
 Prüfen, ob Phython im Path steht: python --version & pip --version
 
 ```
@@ -17,6 +15,11 @@ pip install mkdocs-material
 git clone https://github.com/rogerknop/mkdocs_moba.git
 npm install
 ```
+
+# Konfiguration
+
+Die Default Einstellungen sind in config/default.json definiert.  
+Bei Bedarf können einzelne Attribute in der Datei config/local.json überschrieben werden.
 
 # Python Probleme
 * Falls Berechtigungsfehler: pip Befehle um --user erweitern
@@ -32,27 +35,26 @@ npm run convert => Powerpoint Slides in JPG exportieren
 npm run convertdeploy => Volles Programm: Convert, Build und Deploy
 ```
 
-
 # SSH per Private und Public Key
 
-Es müssen zuerst auf dem Rechner im Homeverzeichnis die Dateien ~/.ssh/id_rsa und ~/.ssh/id_rsa.pub angelegt werden (sshgen)
-
+Es müssen zuerst auf dem Rechner im Homeverzeichnis die Dateien ~/.ssh/id_rsa und ~/.ssh/id_rsa.pub angelegt werden (sshgen)  
 Dann muss auf dem Server das .ssh Verzeichnis mit der Datei authorized_key angelegt werden:
 
 ```
 (umask 077 && test -d ~/.ssh || mkdir ~/.ssh)
 (umask 077 && touch ~/.ssh/authorized_keys)
 ```
-
 In die Datei authorized_keys muss der Inhalt der Datei .ssh/id_rsa.pub kopiert werden.
 
 # Slides in Bilder konvertieren
+
+Es sollte pro PPTX nur ein Slide existieren, damit beide Konvertierungsvarianten verwendet werden können.
+
 ## PPTX convert
 
 Es werden all Slides aus den in oriDocs gefundenen PPTX mit einem PowerShell Script exportiert.
 
 ## LibreOffice convert
 
-LibreOffice installieren und Pfad im Script convert.js prüfen.
-
+LibreOffice installieren und Pfad im Script convert.js prüfen.  
 Mit LibreOffice kann immer nur ein Slide kopiert werden und in deploy.js muss entsprechend der Funktionsaufruf angepasst werden.
