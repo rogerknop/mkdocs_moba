@@ -1,52 +1,51 @@
 const fs = require('fs');
 const homedir = require('os').homedir();
 const Client = require('ssh2-sftp-client');
+
 const node_ssh = require('node-ssh');
 const nodeSsh = new node_ssh();
+
+const config = require('config');
+const hostname = config.get("Deploy.hostname");
+const username = config.get("Deploy.user");
+const remotePath = config.get("Deploy.remotePath");
+const privateKeyFile = homedir + config.get("Deploy.pathPrivateKeyRel2Home");
+const privateKey = fs.readFileSync(privateKeyFile, 'utf8');
 
 console.log(' ');
 console.log('***** Deployment START *********************************************');
 
-const privateKeyFile = homedir + '/.ssh/id_rsa';
-const privateKey = fs.readFileSync(privateKeyFile, 'utf8');
-
-const config = {
-  host: 'ftp.dieknops.de',
-  user: 'dieknops', 
+const sshconfig = {
+  host: hostname,
+  user: username, 
   privateKey: privateKey
 };
 
 //Delete files from server
-let remoteDir = '/httpdocs/moba';
 let newMode = 0o755;  // rwxr-xr-x
 let client = new Client();
 
-client.connect(config)
+client.connect(sshconfig)
   .then(() => {
-    console.log("delete " + remoteDir);
-    return client.rmdir(remoteDir, true);
+    console.log("delete " + remotePath);
+    return client.rmdir(remotePath, true);
   })
   .then(() => {
-    console.log("mkdir " + remoteDir);
-    return client.mkdir(remoteDir, true);
+    console.log("mkdir " + remotePath);
+    return client.mkdir(remotePath, true);
   })
   .then(() => {
-    console.log("chmod " + remoteDir);
-    return client.chmod(remoteDir, newMode);
+    console.log("chmod " + remotePath);
+    return client.chmod(remotePath, newMode);
   })
   .then(() => {
     var client_end = client.end();
 
-    console.log("Upload /site --> " + remoteDir);
+    console.log("Upload /site --> " + remotePath);
 
-    nodeSsh.connect(config)
-    /*{
-      host: 'ftp.dieknops.de',
-      username: 'dieknops', 
-      privateKey: privateKey
-    })*/
+    nodeSsh.connect(sshconfig)
     .then(function() {
-      nodeSsh.putDirectory('site', remoteDir, {
+      nodeSsh.putDirectory('site', remotePath, {
         recursive: true,
         concurrency: 1
       }).then(function(status) {

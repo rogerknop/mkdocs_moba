@@ -9,6 +9,11 @@ const config = require('config');
 const useLibreOffice = config.get("Convert.useLibreOffice");
 const cmdLibreOffice = config.get("Convert.LibreOffice.cmdLibreOffice");
 
+if (!config.get("Convert.active")) {
+    console.log('Die Konvertierung ist im Config deaktiviert!!!');
+    return;
+}
+
 console.log(' ');
 console.log('***** Konvertierung START *********************************************');
 

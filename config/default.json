@@ -1,8 +1,16 @@
 // In den Konfigurations JSON sind Kommentare erlaubt!
 // In local.json können Attribute nach Bedarf überschrieben werden.
 {
+    // Deployment Einstellungen
+    "Deploy": {
+        "hostname": "hostname",
+        "user": "username",
+        "pathPrivateKeyRel2Home": "/.ssh/id_rsa",
+        "remotePath": "/httpdocs/site"
+    },
     // Konvertierung der PPTX mit Libreoffice oder Powershell/Powerpoint
     "Convert": {
+        "active": false,
         "useLibreOffice": true,
         "LibreOffice": {
             "cmdLibreOffice": "C:/Program Files/LibreOffice/program/soffice.exe"
