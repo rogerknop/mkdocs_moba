@@ -2,13 +2,7 @@
 {
     // Hier können Konfigurationseinstellungen überschrieben werden, die nur lokal verwendet werden!
     // Nur die Attribute definieren, die überschrieben werden sollen.
-    "Deploy": {
-        "hostname": "ftp.dieknops.de",
-        "user": "dieknops",
-        "remotePath": "/httpdocs/moba"
-    },
     "Convert": {
-        "active": false
         //"useLibreOffice": false
     }
 }
