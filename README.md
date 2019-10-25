@@ -8,12 +8,14 @@ Dieses Framework erstellt Internetseite auf Basis von Konfiguration und Markdown
 Python & pip Installieren: https://www.python.org/downloads/  
 Prüfen, ob Phython im Path steht: python --version & pip --version
 
+Hier die Schritte für die Installation. Der letzte git Befehl bewirkt, dass die lokalen Einstellungen nicht gepusht werden:
 ```
 pip install --upgrade pip
 pip install mkdocs
 pip install mkdocs-material
 git clone https://github.com/rogerknop/mkdocs_moba.git
 npm install
+git update-index assume-unchanged config/local.json
 ```
 
 # Konfiguration
