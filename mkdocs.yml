@@ -12,7 +12,7 @@ extra_css: [custom/material/css/custom_styles.css]
 nav: 
 - Home: 'index.md'
 - Architektur: 'architektur/index.md'
-- RocRail/RocNetNode/Rocview Installation: 'rocrail/index.md'
-#- Level 1:
-#    - 'Level 1 1': 'level1/level_1_1.md'
-#    - 'Level 1 2': 'level1/level_1_2.md'
+- RocRail:
+  - Installation: 'rocrail/install.md'
+  - Rocview: 'rocrail/rocview.md'
+  - RocNetNode: 'rocrail/rocnetnode.md'
