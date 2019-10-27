@@ -1,8 +1,8 @@
 site_name: TramRogi
 theme: 
   name: material
-  logo: 'img/logo.png'
-  favicon: 'img/favicon.ico'
+  logo: 'img/site/logo.png'
+  favicon: 'img/site/favicon.ico'
 extra_css: [custom/material/css/custom_styles.css]
 #prev_next_buttons_location: none
 #theme: windmill-dark
