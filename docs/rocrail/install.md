@@ -1,11 +1,11 @@
 # Installation
 
-## Raspberry Pi
+### Raspberry Pi
 * Standard Raspberry Pi Image aufspielen
 * Feste IP vergeben
 * Rocrail installieren
 
-### Alle Interface Adapter deaktivieren, damit UDP geht
+##### Alle Interface Adapter deaktivieren, damit UDP geht
 ```
 sudo nano /boot/config.txt
 dtoverlay=pi3-disable-bt
