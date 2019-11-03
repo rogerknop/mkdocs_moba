@@ -16,3 +16,4 @@ nav:
   - Installation: 'rocrail/install.md'
   - Rocview: 'rocrail/rocview.md'
   - RocNetNode: 'rocrail/rocnetnode.md'
+- Ausblick: 'ausblick/index.md'
