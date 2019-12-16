@@ -4,7 +4,7 @@ Von der Entscheidungsphase angefangen bei der Spurwahl bis zur Fertigstellung...
 
 ## Entscheidungen für die Umsetzung
 * Spur N
-* Fleischmann K-Gleis
+* Fleischmann C-Gleis
 * Zugsteuerung: Zentrale Schwarz (Profi) Roco Z21 (10820)
 * Gleisbesetztmeldung GCA Komponenten - siehe [Architektur](architektur/index.md)
 * Weichensteuerung GCA Komponenten - siehe [Architektur](architektur/index.md)
