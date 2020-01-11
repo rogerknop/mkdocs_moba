@@ -16,6 +16,9 @@ nav:
   - Installation: 'rocrail/install.md'
   - Rocview: 'rocrail/rocview.md'
   - RocNetNode: 'rocrail/rocnetnode.md'
+- Verkabelung: 'verkabelung/index.md'
+- Planung Dach: 'plan/index.md'
 - Sonstiges:
   - Schienenreinigung: 'misc/reinigung.md'
+  - Signal Wiki: 'misc/signal.md'
 - Ausblick: 'ausblick/index.md'

@@ -1,0 +1,2 @@
+* Es gibt eine gute Erklärung zu Signalen auf der Rocrail Seite: <a href="https://wiki.rocrail.net/doku.php?id=signaling-de" target="_blank">Rocrail - Signale</a>  
+* Evtl. ist dieses <a href="https://de.aliexpress.com/item/32953463307.html" target="_blank">3er Set</a> interessant!

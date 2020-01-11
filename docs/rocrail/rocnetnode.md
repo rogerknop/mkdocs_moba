@@ -1,5 +1,10 @@
 # RocNetNode
 
+### GCA Übersicht
+* <a href="https://wiki.rocrail.net/doku.php?id=gca:gca-index-de" target="_blank">Preise</a>
+* <a href="https://wiki.rocrail.net/doku.php?id=%3Agca%3Agca-orderform-de" target="_blank">Bestellformular</a>
+* <a href="https://wiki.rocrail.net/lib/exe/fetch.php?cache=&media=gca:gca_raspi_overview_1.png" target="_blank">Anschlussbeispiel 1</a>
+
 ### PI01 <a href="https://wiki.rocrail.net/doku.php?id=gca1-pi01-de" target="_blank">(Dokulink)</a>
 Der PI01 wird auf einen Raspi aufgesteckt und dient als Zentrale zu PI02 usw.  
 An einem Raspi können 4 PI02 und 8 PI03 parallel betrieben werden.  
@@ -30,7 +35,7 @@ Platine # | dip 1 | dip 2 | I/O-Ports | I2C-Adresse
 4 | on  | on  | 97..128 | 0×26-0×27
 
 ---
-### PI03 <a href="https://wiki.rocrail.net/doku.php?id=gca_pi03-de" target="_blank">(Dokulink)</a>
+### PI03 <a href="https://wiki.rocrail.net/doku.php?id=gca-pi03-de" target="_blank">(Dokulink)</a>
 Pro PI03 kann 16 Ausgänge steuern.  
 Jeder Ausgang kann für das Regeln eines Servo-Motors oder zur 0-100%-Einstellung der Leuchtstärke einer LED verwendet werden.   
 Es können 8 PI03 an einen Raspi angeschlossen werden, also insgesamt sind 128 regelbare Ausgänge möglich.
@@ -67,8 +72,9 @@ Senkrechtes kreuzen ist kein Problem.
 ![Hallsensor](../img/rocnetnode/hallsensor.jpg)
 
 ##### Handhabung in Rocrail
-Rocrail vergleicht die gezählten Wagen des Von- mit dem Nach-Block:
-* Wenn ein oder beide Blocks "null" melden, erfolgt kein Vergleich.
-* Normale Verarbeitung erfolgt im Fall, dass der Nach-Block einen gleichen oder höheren Zählwert als der Von-Block meldet.
-* Im Fall, dass der Nach-Block einen kleineren Zählwert als der Von-Block meldet, wird die Lok vom Automodus abgemeldet und der Von-Block wird geschlossen "closed".
-* Nach dem die verlorenen Wagen wieder an den Zug angehängt wurden, kann der Von-Block wieder aktiviert und die Lok im Automodus re-aktiviert werden.
+Rocrail vergleicht die gezählten Wagen des Von- mit dem Nach-Block:  
+
+* Wenn ein oder beide Blocks "null" melden, erfolgt kein Vergleich.  
+* Normale Verarbeitung erfolgt im Fall, dass der Nach-Block einen gleichen oder höheren Zählwert als der Von-Block meldet.  
+* Im Fall, dass der Nach-Block einen kleineren Zählwert als der Von-Block meldet, wird die Lok vom Automodus abgemeldet und der Von-Block wird geschlossen "closed".  
+* Nach dem die verlorenen Wagen wieder an den Zug angehängt wurden, kann der Von-Block wieder aktiviert und die Lok im Automodus re-aktiviert werden.  
