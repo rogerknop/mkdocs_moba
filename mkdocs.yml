@@ -19,6 +19,6 @@ nav:
 - Verkabelung: 'verkabelung/index.md'
 - Planung Dach: 'plan/index.md'
 - Sonstiges:
+  - Signale: 'misc/signal.md'
   - Schienenreinigung: 'misc/reinigung.md'
-  - Signal Wiki: 'misc/signal.md'
 - Ausblick: 'ausblick/index.md'
