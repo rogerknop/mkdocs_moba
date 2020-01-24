@@ -57,6 +57,12 @@ Das Verketten von einem PI02 oder PI03 zum nächsten möglich.
 <a href="https://wiki.rocrail.net/lib/exe/detail.php?id=gca-pi06-de&media=gca:gca_raspi_overview_1.png" target="_blank">Beispiel Architektur</a>
 
 ---
+### PI08 <a href="https://wiki.rocrail.net/doku.php?id=gca-pi08-de" target="_blank">(Dokulink)</a>
+Der PI08 kann 16 Ausgänge steuern und ist ideal für die Steuerung der LEDs der Signale.  
+Die initiale Diskussion für die Entstehung des PI08 ist im <a href="https://forum.rocrail.net/viewtopic.php?t=16286" target="_blank">Rocrail Forum</a> beschrieben.  
+Die Rocrail Anbindung ist im <a href="https://wiki.rocrail.net/doku.php?id=rocnet:rocnetnode-led-de" target="_blank">Rocrail Wiki</a> dokumentiert.
+
+---
 ### GCA173 <a href="https://wiki.rocrail.net/doku.php?id=gca173-de" target="_blank">(Dokulink)</a>
 Signale von Hallsensoren werden gehalten und in ausreichender Dauer an den PI02 gemeldet.  
 Der Sensor selbst wird in Rocrail als *Achs-Zähler* programmiert.  
