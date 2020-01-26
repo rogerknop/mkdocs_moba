@@ -1,8 +1,9 @@
 # Verkabelung
-**Achtung! Bei Netzteilen mit mehr als 3A besteht ohne eine Sicherung Brandgefahr!**  
+**Achtung! Bei Netzteilen mit mehr als 3A besteht ohne eine Sicherung Brandgefahr!**
+Mit einer selbst rückstellenden Sicherung kann man das Netz schützen. Siehe hierzu den folgenden Forumsbeitrag. Rocnetnode benötigt keine Extrasicherung, da auf dem PI06 schon eine drauf ist.  
 
 Mein Forumsbeitrag dazu mit vielen nützlichen Tipps: <a href="https://forum.rocrail.net/viewtopic.php?f=94&t=19416" target="_blank">Tipps Verkabelung & Stromversorgung</a>  
-
+ 
 ### Digitale Stromversorgung & Rocnet
 ##### Überblick
 <a href="../img/ppt/Verkabelung.jpg" target="_blank">![Verkabelung](../img/ppt/Verkabelung.jpg)</a>
