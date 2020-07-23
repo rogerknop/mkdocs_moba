@@ -20,6 +20,7 @@ nav:
 - Planung Dach: 'plan/index.md'
 - Sonstiges:
   - Signale: 'misc/signal.md'
+  - Löten & Decoder: 'misc/loeten.md'
   - Schienenreinigung: 'misc/reinigung.md'
   - FAQ: 'misc/faq.md'
 - Ausblick: 'ausblick/index.md'
