@@ -1,3 +1,12 @@
+# ToDo
+
+### WIO
+
+Über den ESP32 D1 Mini Servos steuern und Rückmelder einlesen!
+
+* <a href="https://wiki.rocrail.net/doku.php?id=arduino:wio-overview-en" target="_blank">WIO Overview</a>
+* <a href="https://wiki.rocrail.net/doku.php?id=wio:wio03-io16-en" target="_blank">IO-03 16 I/O für Servos und Hallsensoren</a>
+
 # Ausblick
 
 ### Planungssoftware

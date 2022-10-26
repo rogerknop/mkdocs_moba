@@ -3,6 +3,8 @@ theme:
   name: material
   logo: 'img/site/logo.png'
   favicon: 'img/site/favicon.ico'
+  palette:
+    scheme: slate
 extra_css: [custom/material/css/custom_styles.css]
 #prev_next_buttons_location: none
 #theme: windmill-dark
@@ -23,4 +25,4 @@ nav:
   - Löten & Decoder: 'misc/loeten.md'
   - Schienenreinigung: 'misc/reinigung.md'
   - FAQ: 'misc/faq.md'
-- Ausblick: 'ausblick/index.md'
+- ToDo & Ausblick: 'ausblick/index.md'
