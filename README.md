@@ -1,3 +1,10 @@
+# NEW Version Ideen
+
+* Z21 Zentrale verwenden
+* Verkauf N Größen
+* Kauf H0 Größen
+* Steuerung (Weichen, Rückmelder, Licht) ausschließlich über ESP32 Zubehör Module
+
 # Voraussetzungen 
 NodeJs und npm und Powerpoint oder Libreoffice müssen installiert sein.
 
