@@ -2,14 +2,13 @@
 Auf den folgenden Seiten ist der Werdegang meiner Modelleisenbahn dokumentiert.
 Von der Entscheidungsphase angefangen bei der Spurwahl bis zur Fertigstellung... bzw. bis zum aktuellen Stand!
 
-## Entscheidungen für die Umsetzung
-* Spur N
-* Fleischmann C-Gleis
-* Zugsteuerung: Zentrale Schwarz (Profi) Roco Z21 (10820)
-* Gleisbesetztmeldung GCA Komponenten - siehe [Architektur](architektur/index.md)
-* Weichensteuerung GCA Komponenten - siehe [Architektur](architektur/index.md)
-* <a href="https://wiki.rocrail.net/doku.php?id=video-tutorials-de" target="_blank">Software RocRail</a>
-* Epoche Ende 3 bis Mitte 4 (1960-1980)
+**Siehe [ToDo & Ausblick](ausblick/index.md)**
 
-## Aktueller Stand
-Prototyp für die GCA Komponenten für die Gleisbesetztmeldung und die Weichensteuerung.
+## Entscheidungen für die Umsetzung
+* Spur H0
+* Roco Line ohne Bettung
+* Zugsteuerung: Zentrale Schwarz (Profi) Roco Z21 (10820)
+* Steuerung (Weichen, Rückmelder, Licht) ausschließlich über ESPs - Kommunikation ohne Z21 direkt mit Rocrai über WIO (ohne GCA)
+* <a href="https://wiki.rocrail.net/doku.php?id=video-tutorials-de" target="_blank">Software RocRail</a>
+* Nur Dampflok Ära mit Berg, See und Autos
+

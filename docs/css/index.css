@@ -1,0 +1,106 @@
+.md-footer-nav {
+    display: none;
+}
+
+code, pre {
+    font-family: monospace;
+    color: #666666 !important;
+}
+
+/* Icons für die Blöcke / https://petershaggynoble.github.io/MDI-Sandbox/  / Rechts Menüclick Copy Data URI */
+:root {    
+    --md-admonition-icon--terminal: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwLDE5VjdINFYxOUgyME0yMCwzQTIsMiAwIDAsMSAyMiw1VjE5QTIsMiAwIDAsMSAyMCwyMUg0QTIsMiAwIDAsMSAyLDE5VjVDMiwzLjg5IDIuOSwzIDQsM0gyME0xMywxN1YxNUgxOFYxN0gxM005LjU4LDEzTDUuNTcsOUg4LjRMMTEuNywxMi4zQzEyLjA5LDEyLjY5IDEyLjA5LDEzLjMzIDExLjcsMTMuNzJMOC40MiwxN0g1LjU5TDkuNTgsMTNaIi8+PC9zdmc+');
+    --md-admonition-icon--file: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTgsMTJIMTZWMTRIOFYxMk0xMCwyMEg2VjRIMTNWOUgxOFYxMi4xTDIwLDEwLjFWOEwxNCwySDZBMiwyIDAgMCwwIDQsNFYyMEEyLDIgMCAwLDAgNiwyMkgxMFYyME04LDE4SDEyLjFMMTMsMTcuMVYxNkg4VjE4TTIwLjIsMTNDMjAuMywxMyAyMC41LDEzLjEgMjAuNiwxMy4yTDIxLjksMTQuNUMyMi4xLDE0LjcgMjIuMSwxNS4xIDIxLjksMTUuM0wyMC45LDE2LjNMMTguOCwxNC4yTDE5LjgsMTMuMkMxOS45LDEzLjEgMjAsMTMgMjAuMiwxM00yMC4yLDE2LjlMMTQuMSwyM0gxMlYyMC45TDE4LjEsMTQuOEwyMC4yLDE2LjlaIi8+PC9zdmc+');
+    --md-admonition-icon--fhem: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwIDZIMTJMMTAgNEg0QTIgMiAwIDAgMCAyIDZWMThBMiAyIDAgMCAwIDQgMjBIMjBBMiAyIDAgMCAwIDIyIDE4VjhBMiAyIDAgMCAwIDIwIDZNMTcgMTNWMTdIMTVWMTRIMTNWMTdIMTFWMTNIOUwxNCA5TDE5IDEzWiIvPjwvc3ZnPg==');
+}
+
+/* Scrollbars in Blöcken */
+.md-typeset .admonition.terminal,
+.md-typeset .admonition.file,
+.md-typeset .admonition.fhem {
+    overflow-x: auto;
+    scrollbar-width: 3px;
+    scrollbar-color: var(--md-default-fg-color--lighter) transparent;
+}
+
+/* PRE in den Blöcken */
+.md-typeset .admonition.terminal pre,
+.md-typeset details.terminal pre,
+.md-typeset .admonition.file pre,
+.md-typeset details.file pre,
+.md-typeset .admonition.fhem pre,
+.md-typeset details.fhem pre {
+    padding-left: 5px; 
+    font-size: 1.3em;
+    font-family: monospace;
+}
+
+/* Leerzeilen in den Blöcken PRE schmaler */
+.md-typeset .admonition.terminal pre p,
+.md-typeset details.terminal pre p,
+.md-typeset .admonition.file pre p,
+.md-typeset details.file pre p,
+.md-typeset .admonition.fhem pre p,
+.md-typeset details.fhem pre p {
+    margin: 0; 
+}
+
+/* Terminal Block */
+.md-typeset .admonition.terminal,
+.md-typeset details.terminal {
+    border-color: blue;
+    background-color: #ecf3ff;
+    color: #666666;
+}
+.md-typeset .terminal > .admonition-title,
+.md-typeset .terminal > summary {
+    border-color: blue;
+    color: #666666;
+}
+.md-typeset .terminal > .admonition-title::before,
+.md-typeset .terminal > summary::before {
+    background-color: blue;
+    -webkit-mask-image: var(--md-admonition-icon--terminal);
+            mask-image: var(--md-admonition-icon--terminal);
+    color: #666666;
+}
+
+/* File Content Block */
+.md-typeset .admonition.file,
+.md-typeset details.file {
+    border-color:  #00ff37;
+    background-color: #d4ffce;
+    color: #666666;
+}
+.md-typeset .file > .admonition-title,
+.md-typeset .file > summary {
+    border-color:  #00ff37;
+    color: #666666;
+}
+.md-typeset .file > .admonition-title::before,
+.md-typeset .file > summary::before {
+    background-color: #268d3d;
+    -webkit-mask-image: var(--md-admonition-icon--file);
+            mask-image: var(--md-admonition-icon--file);
+    color: #666666;
+}
+
+/* FHEM Block */
+.md-typeset .admonition.fhem,
+.md-typeset details.fhem {
+    border-color:  #ffae00;
+    background-color: #fdf3dc;
+    color: #666666;
+}
+.md-typeset .fhem > .admonition-title,
+.md-typeset .fhem > summary {
+    border-color:  #ffae00;
+    color: #666666;
+}
+.md-typeset .fhem > .admonition-title::before,
+.md-typeset .fhem > summary::before {
+    background-color: #ffae00;
+    -webkit-mask-image: var(--md-admonition-icon--fhem);
+            mask-image: var(--md-admonition-icon--fhem);
+    color: #666666;
+}

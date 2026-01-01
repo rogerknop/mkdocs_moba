@@ -1,19 +1,34 @@
 site_name: TramRogi
+site_url: https://dieknops.de/moba/
 theme: 
   name: material
   logo: 'img/site/logo.png'
   favicon: 'img/site/favicon.ico'
   palette:
     scheme: slate
-extra_css: [custom/material/css/custom_styles.css]
-#prev_next_buttons_location: none
-#theme: windmill-dark
-#extra_css: [custom/windmill_dark/custom_styles.css]
-#theme: readthedocs
-#extra_css: [custom/readthedocs/custom_styles.css]
+extra_css: [css/index.css]
+markdown_extensions:
+- admonition
+#Icons https://petershaggynoble.github.io/MDI-Sandbox/
+- pymdownx.emoji:
+    emoji_index: !!python/name:material.extensions.emoji.twemoji
+    emoji_generator: !!python/name:material.extensions.emoji.to_svg
+- pymdownx.tilde
+- pymdownx.details
+- toc:
+    permalink: True
+plugins:
+  - drawio:
+      toolbar: true        # control if hovering on a diagram shows a toolbar for zooming or not (default: true)
+      tooltips: true       # control if tooltips will be shown (default: true)
+      edit: true           # control if edit button will be shown in the lightbox view (default: true)
+      border: 10           # increase or decrease the border / margin around your diagrams (default: 0)
+      darkmode: false      # support darkmode. allows for automatic switching between dark and lightmode based on the theme toggle. (default: false)
+      highlight: "#0000FF" # color hyperlinks on mouse hover over (default: no color)
+  - search
 nav: 
 - Home: 'index.md'
-- Architektur: 'architektur/index.md'
+- Architektur ALT: 'architektur/index.md'
 - RocRail:
   - Installation: 'rocrail/install.md'
   - Rocview: 'rocrail/rocview.md'
@@ -26,3 +41,4 @@ nav:
   - Schienenreinigung: 'misc/reinigung.md'
   - FAQ: 'misc/faq.md'
 - ToDo & Ausblick: 'ausblick/index.md'
+- Farblegende: 'legende.md'
