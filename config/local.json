@@ -1,8 +1,14 @@
 // In den Konfigurations JSON sind Kommentare erlaubt!
 {
-    // Hier können Konfigurationseinstellungen überschrieben werden, die nur lokal verwendet werden!
-    // Nur die Attribute definieren, die überschrieben werden sollen.
-    "Convert": {
-        //"useLibreOffice": false
-    }
+  // Hier können Konfigurationseinstellungen überschrieben werden, die nur lokal verwendet werden!
+  // Nur die Attribute definieren, die überschrieben werden sollen.
+  // Deployment Einstellungen
+  "Deploy": {
+      "hostname": "ftp.dieknops.de",
+      "user": "dieknops",
+      "remotePath": "/httpdocs/moba"
+  },    
+  "Convert": {
+      //"useLibreOffice": false
+  }
 }

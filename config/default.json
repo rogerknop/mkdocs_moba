@@ -5,8 +5,8 @@
     "Deploy": {
         "hostname": "hostname",
         "user": "username",
-        "pathPrivateKeyRel2Home": "/.ssh/id_rsa",
-        "remotePath": "/httpdocs/site"
+        "pathPrivateKeyRel2Home": "\/.ssh\/id_ed25519",
+        "remotePath": "\/httpdocs\/site"
     },
     // Konvertierung der PPTX mit Libreoffice oder Powershell/Powerpoint
     "Convert": {
