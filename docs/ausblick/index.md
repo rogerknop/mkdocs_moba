@@ -2,7 +2,7 @@
 
 ## Next Steps
 * Router einrichten für Subnetz 192.168.10.* mit statischer IP 192.168.1.10 und DHCP nur für Subnetz
-* Z21 verbinden mit neuem Router mit neuer statischer IP 192.168.10.11
+* Z21 verbinden mit neuem Router mit neuer statischer IP 192.168.10.10
 * Moba Raspi
 * Backup alte Konfig
     * Update neues Betriebssystem

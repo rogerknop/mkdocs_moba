@@ -33,7 +33,6 @@ nav:
 - RocRail:
   - Installation: 'rocrail/install.md'
   - Rocview: 'rocrail/rocview.md'
-  - RocNetNode: 'rocrail/rocnetnode.md'
 - Verkabelung: 'verkabelung/index.md'
 - Planung Dach: 'plan/index.md'
 - Sonstiges:

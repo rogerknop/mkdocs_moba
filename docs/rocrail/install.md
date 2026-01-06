@@ -3,22 +3,13 @@
 ### Raspberry Pi
 * Standard Raspberry Pi Image aufspielen
 * Feste IP vergeben
-* Rocrail installieren
+* Rocrail installieren per UNZIP aktuelles Package
+* sudo systemctl enable --now cron
+* crontab -e: @reboot /home/pi/Rocrail/startrocrail.sh
+* nas mounten
+* Backup: Komplettes Verzeichnis ~/Rocrail auf NAS kopieren (enhält auch Workspace /default mit Plan usw.). Evtl. jede Stunde?
 
-##### Alle Interface Adapter deaktivieren, damit UDP geht
-```
-sudo nano /boot/config.txt
-dtoverlay=pi3-disable-bt
-sudo nano /etc/modprobe.d/raspi-blacklist.conf
-# WLAN abschalten
-blacklist brcmfmac
-blacklist brcmutil
-#blacklist cfg80211
-#blacklist rfkill
-# Bluetooth abschalten
-blacklist btbcm
-blacklist hci_uart
-Speichern, schließen und neustarten.
-```
+### Windows
+* Rocrail installieren per UNZIP aktuelles Package nach C:\Rocrail (kein Backup notwendig)
 
 
