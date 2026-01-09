@@ -1,11 +1,15 @@
 # Konfiguration
 
+Beim Start muss man Rocview auf dem PC mit Rocrail auf dem Raspi verbinden (192.168.10.11)
+
 ## Zentrale einbinden
-Zentrale & RocNetNode hinzufügen: Datei -> RocRail Eigenschaften -> Tab Zentrale:
+Zentrale hinzufügen: Datei -> RocRail Eigenschaften -> Tab Zentrale:
 
   * Unten links z21 auswählen und hinzufügen
   * 192.168.10.10
   * Lokomotiven auswählen
+
+Die Virtuelle Zentrale kann gelöscht werden.
 
 ## Weichen Servo
 

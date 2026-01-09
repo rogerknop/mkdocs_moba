@@ -1,3 +1,4 @@
+Hardware Setup
 # Hauptrouter
 Der Moba Router wird über WAN an das Heimnetzwerk gehängt.  
 Er bekommt über die Konfiguration (siehe unten) eine feste IP zugewiesen (192.168.1.10).  
@@ -11,6 +12,21 @@ Weiterhin wird eine statische Route definiert, so dass alle Moba Geräte im Subn
 Setup als Subnetz für die Moba Installationen.
 Router einrichten für Subnetz 192.168.10.* mit statischer IP 192.168.1.10 und DHCP nur für Subnetz mit Range 150-254.
 
+* Gl.iNet UI -> Internet -> WAN (nicht DHCP sondern statisch): 
+  * Netzwerk: 192.168.1.10
+  * Subnetzmaske: 255.255.255.0
+  * Gateway: 192.168.1.1
+* GL.iNet UI -> System -> Erweiterte Einstellungen -> Luci Link
+  * System -> Firewall -> General Settings: Zone wan
+    * 3x Accept
+    * Masquerading deaktiviert
+  * System -> Firewall -> Traffic Rules: Neue Rolle anlegen
+    * Name: Forward WAN2LAN
+    * Restrict to address family: IPv4 und IPv6
+    * Protocol: any
+    * Source Zone: WAN
+    * Destination Zone: LAN 
+
 # Roco Z21 (schwarz)
 Feste IP 192.168.10.10 / 255.255.255.0 / 192.168.10.1  
 Maintenance Tool  
@@ -20,10 +36,9 @@ Im Tool mit 192.168.0.111 verbinden und neue IP vergeben
 Evtl. in Firewall Windows Defender prüfen, ob Z21 freigegeben werden muss
 
 # Rocrail
-Rocrail Server und Client sind die gleiche Installation. Auf dem Raspi mit der statischen IP 192.168.110.11 wird die Installation entpackt. Siehe hierzu [Rocrail Installation](rocrail/install.md)
-
-# PC
-Installation Rocview siehe [Rocview Installation](rocrail/rocview.md)
+Rocrail Server und Client sind die gleiche Installation. Auf dem Raspi mit der statischen IP 192.168.110.11 wird die Installation entpackt.  
+Ebeneso auf dem PC wird nur entpackt.  
+Siehe hierzu [Rocrail Installation](../rocrail/install.md)
 
 # Verkabelungsmaterial
 
@@ -34,7 +49,12 @@ Installation Rocview siehe [Rocview Installation](rocrail/rocview.md)
 * Absicherung Pico 0,5A
 
 
-# Raspi als Router - ALT und zu viel Aufwand
+# Raspi als Router
+
+!!! danger "Achtung"
+    Es funktioniert, ist aber erheblicher Aufwand und fehleranfällig, was die Installation angeht.  
+    Eine Docker Lösung ist nicht möglich!  
+    Daher habe ich mich für den OpenWRT Router GL.iNet entschieden (siehe oben)
 
 ACHTUNG! Unten kommt die Korrektur mit br0 als Bridge für eth0 und wlan0 mit gleicher IP
 
